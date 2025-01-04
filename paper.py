@@ -160,6 +160,7 @@ class ArxivPaper:
         \\begin{abstract}__ABSTRACT__\\end{abstract}
         __INTRODUCTION__
         __CONCLUSION__
+        Please mention the author and research institute in conclusion.
         """
         prompt = prompt.replace('__TITLE__', self.title)
         prompt = prompt.replace('__ABSTRACT__', self.summary)
