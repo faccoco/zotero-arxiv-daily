@@ -154,7 +154,7 @@ class ArxivPaper:
             match = re.search(r'\\section\{Conclusion\}.*?(\\section|\\end\{document\}|\\bibliography|\\appendix|$)', content, flags=re.DOTALL)
             if match:
                 conclusion = match.group(0)
-        prompt = """Given the title, abstract, introduction and the conclusion (if any) of a paper in latex format, generate a one-sentence TLDR summary:
+        prompt = """Given the title, abstract, introduction and the conclusion (if any) of a paper in latex format, generate a one-sentence TLDR summary using Chinese:
         
         \\title{__TITLE__}
         \\begin{abstract}__ABSTRACT__\\end{abstract}
